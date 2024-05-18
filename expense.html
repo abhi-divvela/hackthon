@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Expense Tracker</title>
+</head>
+<body class="container">
+    <form id="formex">
+        <label for="amountInput" placeholder="enter amount" >Amount</label><br>
+        <input type="text" id="amountInput" required><br>
+        <label for="categoryInput" placeholder="enter expense category">Category</label><br>
+        <input type="text" id="categoryInput" required><br>
+       
+        <button type="button" id="addExpenseBtn" onclick="verify()" >Add Expense</button><br>
+        
+    </form>
+    <h2 style="font-family: cursive; text-align: center;">My Expenses</h2>
+    <table id="expenseTable" border="1" >
+        <thead>
+            <tr>
+                <th>Amount</th>
+                <th>Category</th>
+                <th>date</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="expenseBody"></tbody>
+    </table>
+    <script src="expense.js"></script>
+</body>
+</html>
